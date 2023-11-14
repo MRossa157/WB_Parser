@@ -28,6 +28,8 @@ pip install -r requirements.txt
 
 Метод ```make_excel_file``` создает XLSX файл с заголовками ```'Country', 'Latitude', 'Longitude', 'Adress', 'ID', 'Pickup_Type'```
 
+Список поддерживаемых стран: ```'ru', 'by', 'kz', 'kg', 'am', 'uz', 'az'```
+
 ## Использование
 1. Импортируйте класс Wildberries из скрипта:
 ```python
