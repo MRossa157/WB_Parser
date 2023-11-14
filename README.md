@@ -13,11 +13,11 @@
 1. Клонируйте репозиторий на ваш компьютер:
 
 ```bash
-git clone https://github.com/your-username/wildberries-excel-export.git
+git clone https://github.com/MRossa157/WB_Parser.git
 ```
 2. Перейдите в директорию проекта:
 ```bash
-cd wildberries-excel-export
+cd WB_Parser
 ```
 3. Установите необходимые зависимости с помощью pip:
 ```bash
