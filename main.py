@@ -1,5 +1,4 @@
 import requests
-import openpyxl
 from openpyxl import Workbook
 
 
