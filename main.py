@@ -23,7 +23,7 @@ class Wildberries():
         wb = Workbook()
         ws = wb.active
 
-        ws.append(['Country', 'Latitude', 'Longitude', 'Adress', 'ID', 'Pickup_Type'])
+        ws.append(['Country', 'Latitude', 'Longitude', 'Adress', 'ID', 'Pickup_Type', 'isWb', 'dest', 'sign'])
 
         try:
             for item in data['items']:
@@ -32,7 +32,10 @@ class Wildberries():
                 address = item.get('address', None)
                 id = item.get('id', None)
                 pickup_type = item.get('pickupType', None)
-                ws.append([country, lat, lon, address, id, pickup_type])
+                isWb = item.get('isWb')
+                dest = item.get('dest', None)
+                sign = item.get('sign', None)
+                ws.append([country, lat, lon, address, id, pickup_type, isWb, dest, sign])
 
         except Exception as e:
             raise e
@@ -47,9 +50,6 @@ class Wildberries():
 def main():
     wb = Wildberries('ru')
     data = wb.get_all_delivery_points()
-    for i in range(5):
-        print(data['items'][i])
-        ...
     wb.make_excel_file(data)
 
 
