@@ -3,11 +3,10 @@ from openpyxl import Workbook
 
 
 class Wildberries():
-    def __init__(self, country: str, debug: bool = False):
+    def __init__(self, country: str):
         '''
         country in ['ru', 'by', 'kz', 'kg', 'am', 'uz', 'az']
         '''
-        self._debug = debug
         self.country = country.lower()
 
     def get_all_delivery_points(self) -> dict:
