@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ## Использование
 1. Импортируйте класс Wildberries из скрипта:
 ```python
-from wildberries_export import Wildberries
+from WB_Parser import Wildberries
 ```
 2. Создайте экземпляр класса Wildberries, указав код страны (например, 'ru'):
 ```python
